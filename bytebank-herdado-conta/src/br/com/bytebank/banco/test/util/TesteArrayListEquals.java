@@ -28,8 +28,6 @@ public class TesteArrayListEquals {
             System.out.println(oRef);
         }
 
-  
-		
 	}
 
 }
