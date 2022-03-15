@@ -6,27 +6,22 @@ import java.util.List;
 
 public class TesteOutrosWrappers {
 
-      public static void main(String[] args) {
+    public static void main(String[] args) {
 
-              int idade = 29;
-              Integer idadeRef = Integer.valueOf(29); //autoboxing
-              System.out.println(idadeRef.doubleValue());
+            Integer idadeRef = Integer.valueOf(29); //autoboxing
+            System.out.println(idadeRef.intValue()); //unboxing
 
-              System.out.println(Integer.MAX_VALUE);
-              System.out.println(Integer.MIN_VALUE);
+            Double dRef = Double.valueOf(3.2);//autoboxing
+            System.out.println(dRef.doubleValue());//unboxing
 
-              System.out.println(Integer.SIZE);
-              System.out.println(Integer.BYTES);
+            Boolean bRef = Boolean.FALSE;
+            System.out.println(bRef.booleanValue());
 
-              int valor = idadeRef.intValue(); //unboxing
-              String s = "12";//"10"
-              //Integer numero = Integer.valueOf(s);
-              int numero = Integer.parseInt(s);
-              System.out.println(numero);
+            Number refNumero = Integer.valueOf(29);
 
-              List<Integer> numeros = new ArrayList<Integer>();
-              numeros.add(29); //Autoboxing
-
-      }
-
+            List<Number> lista = new ArrayList<>();
+            lista.add(10);
+            lista.add(32.6);
+            lista.add(25.6f);
+    }
 }
